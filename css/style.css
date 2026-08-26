@@ -1,0 +1,338 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.6;
+      background: #f8f5ed;
+      color: #2c241c;
+    }
+
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 8%;
+      background: rgba(30, 24, 18, 0.88);
+      backdrop-filter: blur(8px);
+    }
+
+    .logo {
+      color: #f5c76b;
+      font-size: 1.6rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 28px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #f5c76b;
+    }
+
+    /* Hero */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 120px 20px 80px;
+      background:
+        linear-gradient(rgba(22, 18, 12, 0.45), rgba(22, 18, 12, 0.65)),
+        url("https://i.pinimg.com/1200x/92/9c/81/929c81d0c69ec2c169eb1c9858fd1bbf.jpg")
+        center/cover no-repeat;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .hero h1 {
+      font-size: clamp(3rem, 8vw, 6.5rem);
+      line-height: 1;
+      margin-bottom: 25px;
+      text-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 35px;
+      color: #f4eee2;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 30px;
+      border-radius: 50px;
+      background: #d99b36;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    }
+
+    .btn:hover {
+      background: #f0b94c;
+      transform: translateY(-3px);
+    }
+
+    /* Sections */
+    section {
+      padding: 90px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+      font-size: 2.8rem;
+      color: #4c351f;
+      margin-bottom: 12px;
+    }
+
+    .section-title p {
+      max-width: 700px;
+      margin: auto;
+      color: #756a5d;
+    }
+
+    /* Intro */
+    .intro {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .intro-image {
+      min-height: 430px;
+      border-radius: 25px;
+      background:
+        url("https://i.pinimg.com/1200x/1b/6e/16/1b6e16c74a37f7538688b6157f54aa0b.jpg")
+        center/cover no-repeat;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    }
+
+    .intro-text h3 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      color: #54391d;
+    }
+
+    .intro-text p {
+      color: #665c51;
+      margin-bottom: 18px;
+    }
+
+    /* Cards */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .card {
+      overflow: hidden;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 12px 35px rgba(70, 51, 31, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 45px rgba(70, 51, 31, 0.18);
+    }
+
+    .card-img {
+      height: 240px;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .angkor {
+      background-image:
+        url("https://i.pinimg.com/1200x/2f/65/6e/2f656edd8b16b54181cd811925a33313.jpg");
+    }
+
+    .bayon {
+      background-image:
+        url("https://i.pinimg.com/1200x/17/c6/a2/17c6a2bb51daf616d8a61e36b3afa5a6.jpg");
+    }
+
+    .ta-prohm {
+      background-image:
+        url("https://i.pinimg.com/1200x/e9/14/f7/e914f7b017cd21bad2a7447f1b131890.jpg");
+    }
+
+    .card-content {
+      padding: 25px;
+    }
+
+    .card-content h3 {
+      color: #533819;
+      margin-bottom: 10px;
+      font-size: 1.45rem;
+    }
+
+    .card-content p {
+      color: #73675b;
+    }
+
+    /* Travel Tips */
+    .tips-section {
+      background: #3d3021;
+      color: white;
+    }
+
+    .tips-section .section-title h2 {
+      color: #f5c76b;
+    }
+
+    .tips-section .section-title p {
+      color: #ddd0bc;
+    }
+
+    .tips {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .tip {
+      padding: 30px 20px;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .tip-icon {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    .tip h3 {
+      margin-bottom: 10px;
+      color: #f5c76b;
+    }
+
+    .tip p {
+      color: #ddd0bc;
+      font-size: 0.95rem;
+    }
+
+    /* Experience */
+    .experience {
+      text-align: center;
+      background:
+        linear-gradient(rgba(48, 31, 14, 0.7), rgba(48, 31, 14, 0.7)),
+        url("https://images.unsplash.com/photo-1539650116574-75c0c6d7b7bd?auto=format&fit=crop&w=2000&q=85")
+        center/cover no-repeat;
+      color: white;
+    }
+
+    .experience h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .experience p {
+      max-width: 750px;
+      margin: 0 auto 30px;
+      color: #eee2cf;
+      font-size: 1.1rem;
+    }
+
+    /* Footer */
+    footer {
+      background: #211a13;
+      color: #cfc3b2;
+      text-align: center;
+      padding: 35px 20px;
+    }
+
+    footer h3 {
+      color: #f5c76b;
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .intro {
+        grid-template-columns: 1fr;
+      }
+
+      .cards {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .tips {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 650px) {
+      nav {
+        padding: 15px 5%;
+      }
+
+      nav ul {
+        gap: 12px;
+      }
+
+      nav a {
+        font-size: 0.85rem;
+      }
+
+      .hero h1 {
+        font-size: 3.5rem;
+      }
+
+      .cards,
+      .tips {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 70px 5%;
+      }
+
+      .section-title h2 {
+        font-size: 2.2rem;
+      }
+    }
