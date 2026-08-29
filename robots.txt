@@ -1,0 +1,4 @@
+User-agent:*
+Allow : /
+
+Sitemap: https://angkor-wat-travel.vercel.app/sitemap.xml
